@@ -1,26 +1,4 @@
-import { DataTypes } from "sequelize";
-import { sequelize } from "../database/configdb.js";
 import { pool } from "../database/configdb.js";
-
-const User = sequelize.define("User", {
-  username: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    unique: true,
-  },
-  email: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    unique: true,
-    validate: {
-      isEmail: true,
-    },
-  },
-  password: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-});
 
 const createUser = async (username, email, password) => {
   const query = `
@@ -52,4 +30,3 @@ const getAllUsers = async () => {
 };
 
 export { createUser, findUserByUsernameOrEmail, getAllUsers };
-export default User;
