@@ -1,3 +1,3 @@
 curl --request GET \
-  --url 'https://express-backend-teste.vercel.app/users/register' \
+  --url 'https://backend-express-postgresql-ten.vercel.app/users/register' \
   --header 'Authorization: Bearer (token)'

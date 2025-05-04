@@ -1,5 +1,5 @@
 # URL do endpoint
-URL="https://express-backend-teste.vercel.app/register"
+URL="https://backend-express-postgresql-ten.vercel.app/register"
 
 # Lista de usuários para registrar
 USERS=(
